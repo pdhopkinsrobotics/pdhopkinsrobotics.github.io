@@ -112,7 +112,7 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
+        "p": "Parked (no climb attempted)<br>",
         "o": "Onstage<br>",
         "s": "Onstage (Spotlit)<br>",
         "h": "Harmony<br>",
