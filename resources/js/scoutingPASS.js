@@ -914,12 +914,12 @@ function clearForm() {
       document.getElementById("input_m").value = match + 1
     }
  
-    // reset timestamp
-    document.getElementById("input_cd").value = currentdate.getHours() + `.` + currentdate.getMinutes() + `.` + currentdate.getSeconds() 
-
     // Robot
     resetRobot()
   }
+
+  // reset timestamp
+  document.getElementById("input_cd").value = currentdate.getHours() + `.` + currentdate.getMinutes() + `.` + currentdate.getSeconds() 
 
   // Clear XY coordinates
   inputs = document.querySelectorAll("[id*='XY_']");
