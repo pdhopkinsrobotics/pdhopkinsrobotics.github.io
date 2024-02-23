@@ -7,10 +7,10 @@ var config_data = `
   "checkboxAs": "10",
   "prematch": [
     { "name": "Timestamp",
-      "code": "cd",
+      "code": "ts",
       "type": "text",
-      "size": 20,
-      "maxSize": 20,
+      "size": 8,
+      "maxSize": 8,
       "required": "true",
       "defaultValue":"` + currentdate.getHours() + `.`
       + currentdate.getMinutes() + `.`

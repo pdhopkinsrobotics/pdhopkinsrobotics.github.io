@@ -919,7 +919,7 @@ function clearForm() {
   }
 
   // reset timestamp
-  document.getElementById("input_cd").value = currentdate.getHours() + `.` + currentdate.getMinutes() + `.` + currentdate.getSeconds() 
+  document.getElementById("input_ts").value = currentdate.getHours() + "." + currentdate.getMinutes() + "." + currentdate.getSeconds();
 
   // Clear XY coordinates
   inputs = document.querySelectorAll("[id*='XY_']");
