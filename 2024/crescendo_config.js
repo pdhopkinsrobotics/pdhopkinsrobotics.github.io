@@ -6,21 +6,7 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Timestamp",
-      "code": "ts",
-      "type": "timestamp",
-      "size": 16,
-      "maxSize": 14,
-      "required": "true",
-      "defaultValue":"` 
-      + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
-      + (currentdate.getMonth() < 10?"0":"") + currentdate.getMonth()
-      + (currentdate.getDate() < 10?"0":"") + currentdate.getDate()
-      + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
-      + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
-      + (currentdate.getSeconds() < 10?"0":"") + currentdate.getSeconds() + `"
-    },
-    { "name": "Scouter Initials",
+   { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -77,7 +63,22 @@ var config_data = `
       "clickRestriction": "one",
       "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
       "shape": "circle 5 black red true"
-    }
+    },
+    { "name": "Timestamp",
+    "code": "ts",
+    "type": "timestamp",
+    "size": 16,
+    "maxSize": 14,
+    "required": "true",
+    "defaultValue":"` 
+    + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
+    + (currentdate.getMonth() < 10?"0":"") + currentdate.getMonth()
+    + (currentdate.getDate() < 10?"0":"") + currentdate.getDate()
+    + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
+    + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
+    + (currentdate.getSeconds() < 10?"0":"") + currentdate.getSeconds() + `"
+  }
+
   ],
   "auton": [
     { "name": "Leave Starting Zone",
