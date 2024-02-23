@@ -913,6 +913,9 @@ function clearForm() {
     } else {
       document.getElementById("input_m").value = match + 1
     }
+ 
+    // reset timestamp
+    document.getElementById("input_cd").value = currentdate.getHours() + `.` + currentdate.getMinutes() + `.` + currentdate.getSeconds() 
 
     // Robot
     resetRobot()
@@ -935,7 +938,6 @@ function clearForm() {
     if (code.substring(0, 2) == "l_") continue
     if (code == "e") continue
     if (code == "s") continue
-    if (code == "cd") continue
 
     if (e.className == "clickableImage") {
       e.value = "[]";
