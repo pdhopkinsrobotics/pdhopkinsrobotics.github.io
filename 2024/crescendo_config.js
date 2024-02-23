@@ -8,11 +8,11 @@ var config_data = `
   "prematch": [
     { "name": "Curren Date",
       "code": "cd",
-      "type": "cdate",
+      "type": "text",
       "size": 20,
       "maxSize": 20,
       "required": "true",
-      "defaultValue":` + currentdate.getDate() + `
+      "defaultValue":"` + currentdate.getDate() + `"
     },
     { "name": "Scouter Initials",
       "code": "s",
