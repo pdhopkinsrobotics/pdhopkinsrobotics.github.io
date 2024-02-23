@@ -12,9 +12,9 @@ var config_data = `
       "size": 8,
       "maxSize": 8,
       "required": "true",
-      "defaultValue":"` + currentdate.getHours() + `.`
-      + currentdate.getMinutes() + `.`
-      + currentdate.getSeconds() + `"
+      "defaultValue":"` + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
+      + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
+      + (currentdate.getSeconds() < 10?"0":"") + currentdate.getSeconds() + `"
     },
     { "name": "Scouter Initials",
       "code": "s",
