@@ -10,7 +10,7 @@ var config_data = `
       "code": "ts",
       "type": "timestamp",
       "size": 14,
-      "maxSize": 14,
+      "maxSize": 16,
       "required": "true",
       "defaultValue":"` 
       + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
