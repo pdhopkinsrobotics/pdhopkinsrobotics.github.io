@@ -8,7 +8,7 @@ var config_data = `
   "prematch": [
     { "name": "Timestamp",
       "code": "ts",
-      "type": "text",
+      "type": "timestamp",
       "size": 8,
       "maxSize": 8,
       "required": "true",
