@@ -901,6 +901,7 @@ function clearForm() {
   var match = 0;
   var e = 0;
 
+
   if (pitScouting) {
     swipePage(-1);
   } else {
@@ -919,7 +920,8 @@ function clearForm() {
   }
 
   // reset timestamp
-  document.getElementById("input_ts").value = currentdate.getHours() + "." + currentdate.getMinutes() + "." + currentdate.getSeconds();
+  var currentdate = new Date(); 
+  document.getElementById("input_ts").value = "test"//currentdate.getHours() + "." + currentdate.getMinutes() + "." + currentdate.getSeconds();
 
   // Clear XY coordinates
   inputs = document.querySelectorAll("[id*='XY_']");
