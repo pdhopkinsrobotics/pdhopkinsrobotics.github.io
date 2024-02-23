@@ -9,8 +9,8 @@ var config_data = `
     { "name": "Timestamp",
       "code": "ts",
       "type": "timestamp",
-      "size": 12,
-      "maxSize": 12,
+      "size": 14,
+      "maxSize": 14,
       "required": "true",
       "defaultValue":"` 
       + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
