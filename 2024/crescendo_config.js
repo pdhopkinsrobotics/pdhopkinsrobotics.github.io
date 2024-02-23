@@ -12,8 +12,8 @@ var config_data = `
       "size": 20,
       "maxSize": 20,
       "required": "true",
-      "defaultValue":"` + currentdate.getHours() + `:`
-      + currentdate.getMinutes() + `:`
+      "defaultValue":"` + currentdate.getHours() + `.`
+      + currentdate.getMinutes() + `.`
       + currentdate.getSeconds() + `"
     },
     { "name": "Scouter Initials",
