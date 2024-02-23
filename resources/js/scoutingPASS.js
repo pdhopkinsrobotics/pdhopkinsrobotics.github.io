@@ -935,6 +935,7 @@ function clearForm() {
     if (code.substring(0, 2) == "l_") continue
     if (code == "e") continue
     if (code == "s") continue
+    if (code == "cd") continue
 
     if (e.className == "clickableImage") {
       e.value = "[]";
