@@ -9,12 +9,12 @@ var config_data = `
     { "name": "Timestamp",
       "code": "ts",
       "type": "timestamp",
-      "size": 14,
-      "maxSize": 16,
+      "size": 16,
+      "maxSize": 14,
       "required": "true",
       "defaultValue":"` 
       + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
-      + (currentdate.getMonth() < 10?"9":"") + currentdate.getMonth()
+      + (currentdate.getMonth() < 10?"0":"") + currentdate.getMonth()
       + (currentdate.getDate() < 10?"0":"") + currentdate.getDate()
       + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
       + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
