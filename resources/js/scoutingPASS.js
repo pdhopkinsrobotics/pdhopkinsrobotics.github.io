@@ -633,7 +633,8 @@ function addElement(table, idx, data) {
     idx = addCounter(table, idx, name, data);
   } else if ((data.type == 'scouter') ||
     (data.type == 'event') ||
-    (data.type == 'text')
+    (data.type == 'text'||
+    (data.type == 'timestamp')
   ) {
     idx = addText(table, idx, name, data);
   } else if ((data.type == 'level') ||
