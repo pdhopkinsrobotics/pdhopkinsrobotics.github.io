@@ -922,7 +922,12 @@ function clearForm() {
 
   // reset timestamp
   var currentdate = new Date(); 
-  document.getElementById("input_ts").value = currentdate.getHours() + "." + currentdate.getMinutes() + "." + currentdate.getSeconds();
+  document.getElementById("input_ts").value = (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
+  + (currentdate.getMonth() < 10?"0":"") + currentdate.getMonth()
+  + (currentdate.getDate() < 10?"0":"") + currentdate.getDate()
+  + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
+  + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
+  + (currentdate.getSeconds() < 10?"0":"") + currentdate.getSeconds();
 
   // Clear XY coordinates
   inputs = document.querySelectorAll("[id*='XY_']");
