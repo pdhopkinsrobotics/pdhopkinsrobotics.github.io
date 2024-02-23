@@ -1,3 +1,4 @@
+var currentdate = new Date(); 
 var config_data = `
 {
   "dataFormat": "tsv",
@@ -11,7 +12,7 @@ var config_data = `
       "size": 20,
       "maxSize": 20,
       "required": "true",
-      "defaultValue":Date()
+      "defaultValue":currentdate.getDate()
     },
     { "name": "Scouter Initials",
       "code": "s",
