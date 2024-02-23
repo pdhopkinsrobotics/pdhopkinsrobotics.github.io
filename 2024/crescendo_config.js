@@ -5,6 +5,14 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
+    { "name": "Curren Date",
+      "code": "cd",
+      "type": "cdate",
+      "size": 20,
+      "maxSize": 20,
+      "required": "true",
+      "defaultValue":Date()
+    },
     { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
