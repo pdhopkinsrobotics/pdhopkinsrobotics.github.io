@@ -14,7 +14,7 @@ var config_data = `
       "required": "true",
       "defaultValue":"` 
       + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
-      + (currentdate.getMonth() < 10?"0":"") + currentdate.getMonth()
+      + (currentdate.getMonth() < 10?"9":"") + currentdate.getMonth()
       + (currentdate.getDate() < 10?"0":"") + currentdate.getDate()
       + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
       + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
