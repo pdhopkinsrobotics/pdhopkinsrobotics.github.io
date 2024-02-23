@@ -12,7 +12,7 @@ var config_data = `
       "size": 20,
       "maxSize": 20,
       "required": "true",
-      "defaultValue":currentdate.getDate()
+      "defaultValue":` + currentdate.getDate() + `
     },
     { "name": "Scouter Initials",
       "code": "s",
