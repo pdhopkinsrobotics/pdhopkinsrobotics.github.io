@@ -9,10 +9,14 @@ var config_data = `
     { "name": "Timestamp",
       "code": "ts",
       "type": "timestamp",
-      "size": 8,
-      "maxSize": 8,
+      "size": 12,
+      "maxSize": 12,
       "required": "true",
-      "defaultValue":"` + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
+      "defaultValue":"` 
+      + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
+      + (currentdate.getMonth() < 10?"0":"") + currentdate.getMonth()
+      + (currentdate.getDate() < 10?"0":"") + currentdate.getDate()
+      + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
       + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
       + (currentdate.getSeconds() < 10?"0":"") + currentdate.getSeconds() + `"
     },
