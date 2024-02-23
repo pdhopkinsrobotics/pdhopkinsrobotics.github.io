@@ -922,7 +922,7 @@ function clearForm() {
 
   // reset timestamp
   var currentdate = new Date(); 
-  document.getElementById("input_ts").value = "test"//currentdate.getHours() + "." + currentdate.getMinutes() + "." + currentdate.getSeconds();
+  document.getElementById("input_ts").value = currentdate.getHours() + "." + currentdate.getMinutes() + "." + currentdate.getSeconds();
 
   // Clear XY coordinates
   inputs = document.querySelectorAll("[id*='XY_']");
