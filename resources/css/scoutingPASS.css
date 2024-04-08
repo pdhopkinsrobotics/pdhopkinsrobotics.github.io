@@ -11,7 +11,7 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: black;
 }
 
@@ -24,7 +24,7 @@ html, body{
     font-style: bold;
     letter-spacing: 1px;
     border-width: 4px;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
 }
 
 #auton_table, #endgame_table, #teleop_table {
@@ -50,7 +50,7 @@ html, body{
 
 #postmatchHeader{
     border-width: 4px;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
 }
 
 #prematchHeader1, #prematchHeader2{
@@ -80,7 +80,7 @@ html, body{
     position: absolute;
     left: 0;
     top: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: black;
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: justify;
