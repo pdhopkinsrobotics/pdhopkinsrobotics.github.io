@@ -161,14 +161,14 @@ function addCounter(table, idx, name, data) {
   if (data.hasOwnProperty('tooltip')) {
     cell1.setAttribute("title", data.tooltip);
   }
-  cell2.classList.add("field");
+  cell1.classList.add("field");
 
   var button1 = document.createElement("input");
   button1.setAttribute("type", "button");
   button1.setAttribute("id", "minus_" + data.code);
   button1.setAttribute("onclick", "counter(this.parentElement, -1)");
   button1.setAttribute("value", "-");
-  cell2.appendChild(button1);
+  cell1.appendChild(button1);
 
   var inp = document.createElement("input");
   inp.classList.add("counter");
@@ -184,14 +184,14 @@ function addCounter(table, idx, name, data) {
   inp.setAttribute("value", 0);
   inp.setAttribute("size", 2);
   inp.setAttribute("maxLength", 2);
-  cell2.appendChild(inp);
+  cell1.appendChild(inp);
 
   var button2 = document.createElement("input");
   button2.setAttribute("type", "button");
   button2.setAttribute("id", "plus_" + data.code);
   button2.setAttribute("onclick", "counter(this.parentElement, 1)");
   button2.setAttribute("value", "+");
-  cell2.appendChild(button2);
+  cell1.appendChild(button2);
 
   if (data.hasOwnProperty('cycleTimer')) {
     if (data.cycleTimer != "") {
@@ -208,7 +208,7 @@ function addCounter(table, idx, name, data) {
     def.setAttribute("id", "default_" + data.code)
     def.setAttribute("type", "hidden");
     def.setAttribute("value", data.defaultValue);
-    cell2.appendChild(def);
+    cell1.appendChild(def);
   }
 
   return idx + 1;
@@ -407,12 +407,12 @@ function addText(table, idx, name, data) {
     cell1.innerHTML = `Error: No code specified for ${name}`;
     return idx + 1;
   }
-  var cell2 = row.insertCell(1);
+  var cell1 = row.insertCell(1);
   cell1.innerHTML = name + '&nbsp;';
   if (data.hasOwnProperty('tooltip')) {
     cell1.setAttribute("title", data.tooltip);
   }
-  cell2.classList.add("field");
+  cell1.classList.add("field");
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_" + data.code);
   inp.setAttribute("type", "text");
@@ -439,14 +439,14 @@ function addText(table, idx, name, data) {
   if (data.hasOwnProperty('disabled')) {
     inp.setAttribute("disabled", "");
   }
-  cell2.appendChild(inp);
+  cell1.appendChild(inp);
 
   if (data.hasOwnProperty('defaultValue')) {
     var def = document.createElement("input");
     def.setAttribute("id", "default_" + data.code)
     def.setAttribute("type", "hidden");
     def.setAttribute("value", data.defaultValue);
-    cell2.appendChild(def);
+    cell1.appendChild(def);
   }
 
   return idx + 1
@@ -460,12 +460,12 @@ function addNumber(table, idx, name, data) {
     cell1.innerHTML = `Error: No code specified for ${name}`;
     return idx + 1;
   }
-  var cell2 = row.insertCell(1);
+  var cell1 = row.insertCell(1);
   cell1.innerHTML = name + '&nbsp;';
   if (data.hasOwnProperty('tooltip')) {
     cell1.setAttribute("title", data.tooltip);
   }
-  cell2.classList.add("field");
+  cell1.classList.add("field");
   var inp = document.createElement("input");
   inp.setAttribute("id", "input_" + data.code);
   inp.setAttribute("type", "number");
@@ -493,14 +493,14 @@ function addNumber(table, idx, name, data) {
   if (data.hasOwnProperty('required')) {
     inp.setAttribute("required", "");
   }
-  cell2.appendChild(inp);
+  cell1.appendChild(inp);
 
   if (data.hasOwnProperty('defaultValue')) {
     var def = document.createElement("input");
     def.setAttribute("id", "default_" + data.code)
     def.setAttribute("type", "hidden");
     def.setAttribute("value", data.defaultValue);
-    cell2.appendChild(def);
+    cell1.appendChild(def);
   }
 
   if (data.type == 'team') {
@@ -508,7 +508,7 @@ function addNumber(table, idx, name, data) {
     row = table.insertRow(idx);
     cell1 = row.insertCell(0);
     cell1.setAttribute("id", "teamname-label");
-    cell1.setAttribute("colspan", 1);
+    cell1.setAttribute("colspan", 2);
     cell1.setAttribute("style", "text-align: center;");
   }
 
