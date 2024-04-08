@@ -155,7 +155,7 @@ h2{
 
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm, #displayButton, #copyButton {
     font-family: Arial;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(151, 199, 240);
     text-decoration: none;
     display: inline-block;
