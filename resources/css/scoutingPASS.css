@@ -155,10 +155,13 @@ h2{
 
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm, #displayButton, #copyButton {
     font-family: Arial;
-    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
     background-color: rgb(151, 199, 240);
     text-decoration: none;
     display: inline-block;
+    border: none;
+    border-radius: 4px;
 }
 
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8 {
