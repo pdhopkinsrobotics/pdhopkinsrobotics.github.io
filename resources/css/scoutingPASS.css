@@ -39,7 +39,7 @@ html, body{
 
 .button {
     font-family: Arial;
-    font-size: 16px;
+    font-size: 6px;
 }
 
 #autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
@@ -156,7 +156,7 @@ h2{
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm, #displayButton, #copyButton {
     font-family: Arial;
     padding: 10px;
-    background-color: rgb(151, 199, 240);
+    background-color: #04AA6D;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
@@ -166,7 +166,7 @@ h2{
 
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8 {
     font-family: Arial;
-    background-color: black;
+    background-color: #04AA6D;
     padding: 10px;
     color: white;
     font-size: 20px;
@@ -184,7 +184,7 @@ h2{
 
 #prevButton7, #prevButton8, #prevButton9{
     font-family: Arial;
-    background-color: rgb(151, 199, 240);
+    background-color: #f44336;
     padding: 10px;
     font-size: 20px;
     border: none;
@@ -193,7 +193,7 @@ h2{
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
     font-family: Arial;
-    background-color: black;
+    background-color: #f44336;
     padding: 10px;
     color: white;
     font-size: 20px;
