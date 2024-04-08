@@ -40,6 +40,7 @@ html, body{
 .button {
     font-family: Arial;
     font-size: 6px;
+    background-color: #04AA6D;
 }
 
 #autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
