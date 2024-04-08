@@ -508,7 +508,7 @@ function addNumber(table, idx, name, data) {
     row = table.insertRow(idx);
     cell1 = row.insertCell(0);
     cell1.setAttribute("id", "teamname-label");
-    cell1.setAttribute("colspan", 2);
+    cell1.setAttribute("colspan", 1);
     cell1.setAttribute("style", "text-align: center;");
   }
 
