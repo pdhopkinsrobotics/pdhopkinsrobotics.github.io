@@ -157,6 +157,7 @@ h2{
     font-family: Arial;
     padding: 10px;
     background-color: #04AA6D;
+    color: white;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
@@ -184,7 +185,7 @@ h2{
 
 #prevButton7, #prevButton8, #prevButton9{
     font-family: Arial;
-    background-color: #f44336;
+    background-color: #fa756b;
     padding: 10px;
     font-size: 20px;
     border: none;
@@ -193,7 +194,7 @@ h2{
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
     font-family: Arial;
-    background-color: #f44336;
+    background-color: #fa756b;
     padding: 10px;
     color: white;
     font-size: 20px;
