@@ -154,7 +154,19 @@ h2{
     display: flex;
 }
 
-#nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm, #displayButton, #copyButton {
+##displayButton, #copyButton {
+    font-family: Arial;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+#nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm {
     font-family: Arial;
     padding: 10px;
     background-color: #04AA6D;
@@ -178,10 +190,12 @@ h2{
 
 .undoButton, .flipButton {
     font-family: Arial;
-    background-color: #F0F8FF;
+    background-color: blue;
     padding: 10px;
-    color: black;
+    color: white;
     margin-left: 20px;
+    border: none;
+    border-radius: 4px;
 }
 
 #prevButton7, #prevButton8, #prevButton9{
