@@ -3,7 +3,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
-  "page_title": "Technocrats Scounting",
+  "page_title": "Technocrats Scouting",
   "checkboxAs": "10",
   "prematch": [
    { "name": "Scouter Initials",
