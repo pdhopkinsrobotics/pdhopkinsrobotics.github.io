@@ -43,13 +43,6 @@ html, body{
     background-color: #04AA6D;
 }
 
-#autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
-    color: white;
-    background-color: cornflowerblue;
-    border-color: black;
-    border-width: 4px;
-}
-
 #postmatchHeader{
     color: white;
     background-color: cornflowerblue;
@@ -57,13 +50,13 @@ html, body{
     border-color: rgb(0, 0, 0);
 }
 
-#prematchHeader1{
+#prematchHeader1, #autonHeader1, #endgameHeader1, #teleopHeader1{
     color: white;
     background-color: cornflowerblue;
     border-color: black;
     border-width: 4px;
 }
-#prematchHeader2{
+#prematchHeader2, #autonHeader2, #endgameHeader2, #teleopHeader2{
     color: black;
     background-color: white;
     border-color: black;
