@@ -103,7 +103,7 @@ var config_data = `
     { "name": "Amped Misses",
       "code": "tssam",
       "type": "counter"
-    },
+    }
   ],
   "endgame": [
     { "name": "Stage Timer",
