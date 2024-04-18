@@ -59,10 +59,11 @@ html, body{
     background-color: cornflowerblue;
     border-color: black;
     border-width: 4px;
+    font-style: bold;
 }
 #prematchHeader2{
     color: black;
-    background-color: aliceblue;
+    background-color: white;
     border-color: black;
     border-width: 4px;
 }
