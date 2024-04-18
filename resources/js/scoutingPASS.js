@@ -165,7 +165,6 @@ function addCounter(table, idx, name, data) {
 
   var button1 = document.createElement("input");
   button1.setAttribute("type", "button");
-  button1.setAttribute("style","background_color: blue; color: white;");
   button1.setAttribute("id", "minus_" + data.code);
   button1.setAttribute("onclick", "counter(this.parentElement, -1)");
   button1.setAttribute("value", "-");
