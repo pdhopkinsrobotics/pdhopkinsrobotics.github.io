@@ -16,7 +16,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024mndu",
+      "defaultValue": "2024cur",
       "required": "true"
     },
     { "name": "Match Level",
@@ -55,14 +55,6 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png",
-      "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -74,8 +66,16 @@ var config_data = `
       "code": "aas",
       "type": "counter"
     },
+    { "name": "Amp Misses",
+      "code": "aam",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "ass",
+      "type": "counter"
+    }
+    { "name": "Speaker Misses",
+      "code": "asm",
       "type": "counter"
     }
   ],
@@ -84,25 +84,26 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
+    { "name": "Amp Misses",
+      "code": "tam",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
-      "code": "tta",
+    { "name": "Speaker Misses",
+      "code": "tsm",
       "type": "counter"
     },
-    { "name": "Pickup From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    }
+    { "name": "Amped Scores",
+      "code": "tssas",
+      "type": "counter"
+    },
+    { "name": "Amped Misses",
+      "code": "tssam",
+      "type": "counter"
+    },
   ],
   "endgame": [
     { "name": "Stage Timer",
@@ -114,15 +115,13 @@ var config_data = `
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "c": "Climbed<br>",
+        "f": "Failed climb<br>",
+        "x": "Nothing"
       },
       "defaultValue": "x"
     },
-    { "name": "Note in Trap",
+    { "name": "Notes in Trap",
       "code": "nit",
       "type": "bool"
     }
@@ -132,9 +131,9 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
+        "b": "Below Average<br>",
         "a": "Average<br>",
-        "v": "Very Effective<br>",
+        "e": "Above Average<br>",
         "x": "Not Observed"
       },
       "defaultValue": "x"
@@ -145,34 +144,13 @@ var config_data = `
       "choices": {
         "b": "Below Average<br>",
         "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
+        "e": "Above Average<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"
     },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
-      "type": "bool"
-    },
-    { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
@@ -185,21 +163,7 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55
-    },
-    { "name": "Timestamp",
-    "code": "ts",
-    "type": "timestamp",
-    "size": 16,
-    "maxSize": 14,
-    "required": "true",
-    "defaultValue":"` 
-    + (currentdate.getFullYear() < 10?"0":"") + currentdate.getFullYear()
-    + (currentdate.getMonth() < 10?"0":"") + currentdate.getMonth()
-    + (currentdate.getDate() < 10?"0":"") + currentdate.getDate()
-    + (currentdate.getHours() < 10?"0":"") + currentdate.getHours()
-    + (currentdate.getMinutes() < 10?"0":"") + currentdate.getMinutes()
-    + (currentdate.getSeconds() < 10?"0":"") + currentdate.getSeconds() + `"
-  }
+    }
 
   ]
 }`;
