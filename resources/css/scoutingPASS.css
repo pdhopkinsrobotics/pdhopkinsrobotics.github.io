@@ -47,6 +47,7 @@ html, body{
     color: black;
     border-color: black;
     border-width: 4px;
+    font-style: bold;
 }
 
 #postmatchHeader{
@@ -66,6 +67,7 @@ html, body{
     background-color: white;
     border-color: black;
     border-width: 4px;
+    font-style: bold;
 }
 
 #qrHeader1, #qrHeader2 {
