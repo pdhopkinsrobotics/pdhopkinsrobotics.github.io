@@ -240,10 +240,10 @@ h2{
    }
    #input_aas, #input_aam, #input_ass, #input_asm, #input_tas, #input_tam, #input_tss, #input_tsm, #input_tssas, #input_tssam, #input_tts, #input_ttm{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: black;
     padding: 8px 18px;
     font-size: 18px;
-    color: black;
+    color: white;
     border: none;
    }
       
