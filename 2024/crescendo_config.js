@@ -157,7 +157,7 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
-    { "name": "Good match for us?",
+    { "name": "Good fit for us?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
