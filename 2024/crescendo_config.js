@@ -128,10 +128,6 @@ var config_data = `
         "x": "Nothing"
       },
       "defaultValue": "x"
-    },
-    { "name": "Notes in Trap",
-      "code": "nit",
-      "type": "bool"
     }
   ],
   "postmatch": [
