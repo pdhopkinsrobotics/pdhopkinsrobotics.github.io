@@ -220,6 +220,12 @@ h2{
     border-radius: 4px;
 
 }
+#minus_aas{
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #fa756b;
+ padding: 10px;
+ color: white;
+}
 
 #prematch_table{
     font: Arial;
