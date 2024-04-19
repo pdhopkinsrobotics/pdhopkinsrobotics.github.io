@@ -220,11 +220,13 @@ h2{
     border-radius: 4px;
 
 }
-#minus_aas{
+#minus_aas, #minus_ass{
  font-family: Arial, Helvetica, sans-serif;
  background-color: #fa756b;
- padding: 10px;
+ padding: 8px 18px;
  color: white;
+ border: none;
+ border-radius: 4px;
 }
 
 #prematch_table{
