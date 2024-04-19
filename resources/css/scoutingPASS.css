@@ -220,7 +220,7 @@ h2{
     border-radius: 4px;
 
 }
-#minus_aas, #minus_ass{
+#minus_aas, #minus_aam, #minus_ass, #minus_asm, #minus_tas, #minus_tam, #minus_tss, #minus_tsm, #minus_tssas, #minus_tssam, #minus_tts, #minus_ttm{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fa756b;
     padding: 8px 18px;
@@ -229,7 +229,7 @@ h2{
     border: none;
     border-radius: 4px;
 }
-   #plus_aas, #plus_ass{
+#plus_aas, #plus_aam, #plus_ass, #plus_asm, #plus_tas, #plus_tam, #plus_tss, #plus_tsm, #plus_tssas, #plus_tssam, #plus_tts, #plus_ttm{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #04AA6D;
     padding: 8px 18px;
