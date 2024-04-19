@@ -58,7 +58,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Leave Starting Zone",
+    { "name": "Left Starting Zone?",
       "code": "al",
       "type": "bool"
     },
@@ -96,12 +96,20 @@ var config_data = `
       "code": "tsm",
       "type": "counter"
     },
-    { "name": "Amped Scores",
+    { "name": "Amplified Scores",
       "code": "tssas",
       "type": "counter"
     },
-    { "name": "Amped Misses",
+    { "name": "Amplified Misses",
       "code": "tssam",
+      "type": "counter"
+    },
+    { "name": "Trap Scores",
+      "code": "tts",
+      "type": "counter"
+    },
+    { "name": "Trap Misses",
+      "code": "ttm",
       "type": "counter"
     }
   ],
@@ -149,11 +157,11 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Died/Immobilized",
+    { "name": "Died/Immobilized?",
       "code": "die",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
+    { "name": "Good match for us?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
