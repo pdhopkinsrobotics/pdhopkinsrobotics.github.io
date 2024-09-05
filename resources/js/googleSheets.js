@@ -1,5 +1,5 @@
 function setUpGoogleSheets() {
-    const scriptURL = '<SCRIPT URL>'
+    const scriptURL = 'https://script.google.com/a/macros/hopkinsrobotics.org/s/AKfycbyaD9oTx5OTfBx9_6LjKXXOMI8P0LecwJyqc-aGNssxAg_VhI2erRFgW352t_Ef9yWQ/exec'
     const form = document.querySelector('#scoutingForm')
     const btn = document.querySelector('#submit')
  
